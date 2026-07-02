@@ -40,3 +40,7 @@ Do not push directly to `main` — the branch is protected.
 | [work-log](work-log/) | Document work in GitHub and capture repeatable workflows as skills |
 | [slack-announce](slack-announce/) | Announce updates and reports to the right internal Slack channels |
 | [transcript-to-tasks](transcript-to-tasks/) | Convert any transcript, email, or discussion into Asana tasks |
+| [catch-me-up](catch-me-up/) | Summarise any thread, email, or document into what happened, decisions made, and what needs attention |
+| [brainstorm](brainstorm/) | Generate ideas across different angles for any problem, project, or creative brief |
+| [slack-loose-ends](slack-loose-ends/) | Scan Slack for unresolved mentions and threads waiting on a response |
+| [slack-loose-ends-reviewer](slack-loose-ends-reviewer/) | Full operational Slack audit — maps the workspace, surfaces blockers, unactioned promises, client risks, and untracked tasks |
