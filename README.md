@@ -39,3 +39,4 @@ Do not push directly to `main` — the branch is protected.
 | [report-publish](report-publish/) | Publish HTML reports to Cloudflare Pages at kdweb.co.uk |
 | [work-log](work-log/) | Document work in GitHub and capture repeatable workflows as skills |
 | [slack-announce](slack-announce/) | Announce updates and reports to the right internal Slack channels |
+| [transcript-to-tasks](transcript-to-tasks/) | Convert any transcript, email, or discussion into Asana tasks |
