@@ -65,28 +65,36 @@ description: >            # primary trigger mechanism — be specific and
 
 ### 3. Create the directory and file
 
+Write the skill into the local clone of the library:
+
 ```
-/tmp/claude-skills/<skill-name>/SKILL.md
+~/.claude/skills/claude-skills/<skill-name>/SKILL.md
 ```
 
-Then add it to the README.md table in `/tmp/claude-skills/README.md`.
+### 4. Submit for review — do NOT push to main
 
-### 4. Commit and push
+The library is gatekeeper-controlled. Only @palmeheskd can merge to main.
+Submit the skill as a pull request:
 
 ```bash
-cd /tmp/claude-skills
+cd ~/.claude/skills/claude-skills
+git checkout -b add/<skill-name>
 git add <skill-name>/
-git add README.md
 git commit -m "add <skill-name> skill"
-git push origin main
+git push origin add/<skill-name>
+gh pr create \
+  --title "add: <skill-name>" \
+  --body "**What it does:** ...\n**When it triggers:** ...\n**Tested with:** ..."
 ```
 
 ### 5. Confirm with the user
 
 Tell the user:
-- What the skill does
-- When it will trigger
-- The GitHub URL to the file
+- What the skill does and when it triggers
+- The PR link to share with @palmeheskd for review
+- That it will be available to the whole team once merged
+
+Do not push directly to main — the branch is protected.
 
 ---
 

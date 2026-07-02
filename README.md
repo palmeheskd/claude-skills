@@ -4,17 +4,29 @@ A company-wide library of Claude Code skills for the team at kdweb.
 
 ## Usage
 
-Add this repo as a skills source in your Claude Code settings (`~/.claude/settings.json`):
+Clone the library into your local Claude skills directory:
 
-```json
-{
-  "skills": {
-    "sources": ["github:palmeheskd/claude-skills"]
-    }
-}
+```bash
+gh repo clone palmeheskd/claude-skills ~/.claude/skills/claude-skills
 ```
 
-Then use skills with `/skill-name` in any Claude Code session.
+Pull updates when new skills are added:
+
+```bash
+cd ~/.claude/skills/claude-skills && git pull
+```
+
+Skills activate automatically in your next Claude Code session.
+
+## Contributing
+
+Anyone can create a skill and submit it for review. **Only @palmeheskd can merge to main.**
+
+1. Create your skill in `~/.claude/skills/claude-skills/<skill-name>/` — use `/skill-creator` to help
+2. Push to a branch and open a PR
+3. @palmeheskd reviews and merges
+
+Do not push directly to `main` — the branch is protected.
 
 ## Skills
 
